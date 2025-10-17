@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TOM7 ARMED HEADQUARTER</title>
+</head>
+<body>
+    <div class="CONTAINER">
+        <div class="LOGO"></div>
+        <h1 class="USERTM">TOM7 ARMED | ZAP GUNS</h1>
+        <div class="FORM-CARD">
+            <form method="POST" action="/attack">
+                <label>Target URL:</label>
+                <input type="text" name="target">
+                <br>
+                <label>Duration (s):</label>
+                <input type="number" name="duration" value="60">
+                <br>
+                <label>Threads:</label>
+                <input type="number" name="threads" value="50">
+                <br>
+                <label>Methods:</label>
+                <select name="method">
+                    <option value="HTTP Flood">HTTP Flood</option>
+                    <option value="Slowloris">Slowloris</option>
+                    <option value="Massive JSON Payloads">Massive JSON Payloads</option>
+                    <option value="RUDY">RUDY</option>
+                    <option value="XML-RPC Flood">XML-RPC Flood</option>
+                </select>
+                <br>
+                <label>Use Tor:</label>
+                <input type="checkbox" name="tor">
+                <br>
+                <input type="submit" value="Start Attack">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
